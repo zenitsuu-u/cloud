@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Application Cloud</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            background-color: #f5f0e8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 60px 50px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            border-top: 5px solid #6b6340;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #f5f0e8;
+            color: #6b6340;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 28px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #1a1a1a;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        h1 span {
+            color: #6b6340;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #4a4a4a;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .divider {
+            width: 50px;
+            height: 3px;
+            background: #c4b99a;
+            margin: 0 auto 40px auto;
+            border-radius: 2px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .info-item {
+            background: #f5f0e8;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: left;
+        }
+
+        .info-item .label {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #6b6340;
+            margin-bottom: 4px;
+        }
+
+        .info-item .value {
+            font-size: 13px;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        .tag-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #1a1a1a;
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        .tag.green  { background: #4a7c59; }
+        .tag.orange { background: #b5451b; }
+
+        footer {
+            margin-top: 40px;
+            font-size: 11px;
+            color: #c4b99a;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="badge">2CLD3 · Introduction au Cloud</div>
+
+    <h1>🚀 Mon Application <span>Cloud</span></h1>
+    <p class="subtitle">
+        Déployée avec succès sur le cloud.<br>
+        Formation Bachelor 2 · École IT
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="info-grid">
+        <div class="info-item">
+            <div class="label">Étudiant</div>
+            <div class="value">Votre Nom</div>
+        </div>
+        <div class="info-item">
+            <div class="label">Module</div>
+            <div class="value">2CLD3</div>
+        </div>
+        <div class="info-item">
+            <div class="label">Plateforme</div>
+            <div class="value">Vercel / AWS S3</div>
+        </div>
+        <div class="info-item">
+            <div class="label">Type</div>
+            <div class="value">Site statique</div>
+        </div>
+    </div>
+
+    <div class="tag-row">
+        <span class="tag green">PaaS</span>
+        <span class="tag orange">IaaS</span>
+        <span class="tag">Cloud Computing</span>
+    </div>
+</div>
+
+<footer>École IT · Année académique 2025-2026</footer>
+
+</body>
+</html>
